@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
+    <meta name="language" content="es">
 </head>
 <body>
     <header>
@@ -22,98 +23,165 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Galletas y Confecciones Artesanales</h1>
-            <p>Hechas a mano con amor utilizando solo los mejores ingredientes</p>
-            <a href="#" class="btn">Explora Nuestra Colección</a>
-        </div>
-    </section>
-    
-    <section class="products">
-        <h2 class="section-title">Nuestras Creaciones Destacadas</h2>
-        
-        <!-- Galleta hecha con CSS - centro de la página -->
-        <div class="cookie-model-container">
-            <div class="cookie-model">
-                <div class="cookie-placeholder">
-                    <div class="cookie"></div>
-                </div>
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <h1>Galletas y Confecciones Artesanales</h1>
+                <p>Hechas a mano con amor utilizando solo los mejores ingredientes</p>
+                <a href="#productos" class="btn">Explora Nuestra Colección</a>
             </div>
-        </div>
+        </section>
         
-        <div class="specs">
-            <div class="spec-item">Recién Horneadas</div>
-            <div class="spec-item">Ingredientes Premium</div>
-            <div class="spec-item">Receta Familiar</div>
-            <div class="spec-item">Calidad Artesanal</div>
-        </div>
-        
-        <div class="product-grid">
-            <div class="product-item">
-                <div class="product-image">
-                    <img src="galletascoche.jpeg" alt="Galleta de Chocolate Con Nuez">
-                </div>
-                <div class="product-info">
-                    <h3>Galleta de Chocolate Con Nuez</h3>
-                    <p>Ricos trozos de chocolate y nuez mezclados en nuestra masa de galleta tradicional</p>
-                    <span class="price">$25</span>
+        <section class="products" id="productos">
+            <h2 class="section-title">Nuestras Creaciones Destacadas</h2>
+            
+            <div class="cookie-model-container">
+                <div class="cookie-model">
+                    <div class="cookie-placeholder">
+                        <div class="cookie"></div>
+                    </div>
                 </div>
             </div>
             
-            <div class="product-item">
-                <div class="product-image">
-                    <img src="galletasocultas.jpeg" alt="Galleta de Avellana">
-                </div>
-                <div class="product-info">
-                    <h3>Delicia de Velvet</h3>
-                    <p>Deliciosa galleta de red Velvet con trocitos de chocolate blanco</p>
-                    <span class="price">$25</span>
-                </div>
+            <div class="specs">
+                <div class="spec-item">Recién Horneadas</div>
+                <div class="spec-item">Ingredientes Premium</div>
+                <div class="spec-item">Receta Familiar</div>
+                <div class="spec-item">Calidad Artesanal</div>
             </div>
             
-            <div class="product-item">
-                <div class="product-image">
-                    <img src="diamtro.jpeg" alt="Galleta de Almendra">
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="galletascoche.jpeg" alt="Galleta de Chocolate Con Nuez">
+                    </div>
+                    <div class="product-info">
+                        <h3>Galleta de Chocolate Con Nuez</h3>
+                        <p>Ricos trozos de chocolate y nuez mezclados en nuestra masa de galleta tradicional</p>
+                        <span class="price">$25</span>
+                    </div>
                 </div>
-                <div class="product-info">
-                    <h3>Crujiente de Almendra</h3>
-                    <p>Almendras crujientes con azúcar caramelizada y sal marina</p>
-                    <span class="price">$25</span>
+                
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="galletasocultas.jpeg" alt="Galleta de Avellana">
+                    </div>
+                    <div class="product-info">
+                        <h3>Delicia de Velvet</h3>
+                        <p>Deliciosa galleta de red Velvet con trocitos de chocolate blanco</p>
+                        <span class="price">$25</span>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="diamtro.jpeg" alt="Galleta de Almendra">
+                    </div>
+                    <div class="product-info">
+                        <h3>Crujiente de Almendra</h3>
+                        <p>Almendras crujientes con azúcar caramelizada y sal marina</p>
+                        <span class="price">$25</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <section class="about">
-        <div class="about-container">
-            <div class="about-image">
-                <img src="logo.jpeg" alt="Historia de Blanche Bakery">
+
+            <div class="product-table-container">
+                <h3 class="table-title">Información Nutricional (por unidad)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Calorías (aprox)</th>
+                            <th>Alérgenos principales</th>
+                            <th>Opción Vegana</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Chocolate y Nuez</td>
+                            <td>250 kcal</td>
+                            <td>Trigo, Nuez, Huevo, Lácteos</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>Delicia de Velvet</td>
+                            <td>280 kcal</td>
+                            <td>Trigo, Huevo, Lácteos</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>Crujiente de Almendra</td>
+                            <td>220 kcal</td>
+                            <td>Trigo, Almendra, Huevo</td>
+                            <td>No</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="about-content">
-                <h2>Nuestra Historia</h2>
-                <p>Fundada en 2020, Blanche comenzó como un pequeño emprendimiento de una madre y su hijo con una pasión por los ingredientes de calidad y las recetas tradicionales. A lo largo de los años, hemos evolucionado para enfocarnos en lo que mejor hacemos: galletas artesanales con chocolate y nueces premium.</p>
-                <p>Cada galleta se elabora a mano diariamente en nuestra panadería utilizando ingredientes de origen local siempre que sea posible. Creemos que los ingredientes simples y de alta calidad crean los dulces más deliciosos.</p>
-                <a href="#" class="btn">Aprende Más</a>
+            </section>
+
+        <section class="gallery" id="galeria">
+            <h2 class="section-title">Momentos Dulces</h2>
+            <div class="gallery-grid">
+                <img src="galletascoche.jpeg" alt="Galleta recién horneada en bandeja">
+                <img src="galletasocultas.jpeg" alt="Primer plano de Red Velvet">
+                <img src="diamtro.jpeg" alt="Galletas de almendra con café">
+                <img src="logo.jpeg" alt="Galletas en caja de regalo">
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="about" id="sobre-nosotros">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="logo.jpeg" alt="Historia de Blanche Bakery">
+                </div>
+                <div class="about-content">
+                    <h2>Nuestra Historia</h2>
+                    <p>Fundada en 2020, Blanche comenzó como un pequeño emprendimiento de una madre y su hijo con una pasión por los ingredientes de calidad y las recetas tradicionales. A lo largo de los años, hemos evolucionado para enfocarnos en lo que mejor hacemos: galletas artesanales con chocolate y nueces premium.</p>
+                    <p>Cada galleta se elabora a mano diariamente en nuestra panadería utilizando ingredientes de origen local siempre que sea posible. Creemos que los ingredientes simples y de alta calidad crean los dulces más deliciosos.</p>
+                    <p class="verification-link">Para mas información, visita nuestro
+                        <a href="https://www.instagram.com/blanche.reposteria/" target="_blank" class="btn-link">Instagram</a>
+                    </p>
+                    <a href="#" class="btn">Aprende Más</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contacto">
+            <h2 class="section-title">Contáctanos para un Pedido</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre Completo:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje / Detalle del Pedido:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Pedido / Consulta</button>
+            </form>
+        </section>
+        </main>
     
     <footer>
         <div class="footer-container">
             <div class="footer-col">
                 <h3>Blanche</h3>
                 <ul>
-                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
                     <li><a href="#">Nuestro Proceso</a></li>
                     <li><a href="#">Carreras</a></li>
                     <li><a href="#">Sostenibilidad</a></li>
@@ -123,7 +191,7 @@
             <div class="footer-col">
                 <h3>Tienda</h3>
                 <ul>
-                    <li><a href="#">Galletas</a></li>
+                    <li><a href="#productos">Galletas</a></li>
                     <li><a href="#">Chocolate</a></li>
                     <li><a href="#">Nueces</a></li>
                     <li><a href="#">Cajas de Regalo</a></li>
